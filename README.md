@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.codewell.cc/challenges/hosterr-waitlist-page--60b3ea4c0cc72310b5a2494d/solution/61dbb5bd6da8ba3fac6b0155)
+- Solution URL: [Solution URL](https://www.codewell.cc/challenges/chirp-landing-page--60fc1e36a383e41090a3c71c/solution/61dcd21c6da8ba3fac6b01cc)
 - Live Site URL: [Live Site URL](https://codewell-chirp-landing-page-challenge.netlify.app/)
 
 ### Built with
