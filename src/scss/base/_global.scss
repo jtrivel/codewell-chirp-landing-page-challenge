@@ -1,0 +1,35 @@
+@use 'variables' as v ;
+@use 'mixins' as m ;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: v.$mainBg;
+  font-family: v.$primaryFont;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: v.$black;
+}
+
+.container {
+  max-width: 140rem;
+  width: 95%;
+  margin-inline:auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-twitter {
+  font-size: 1.6rem;
+  margin-right: .5rem;
+}

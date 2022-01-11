@@ -1,0 +1,85 @@
+@use '../base/variables' as v ;
+@use '../base/mixins' as m ;
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  &__logo {
+    font-weight: 700;
+    color: v.$btnBg;
+    font-style: italic;
+    font-size: 2rem;
+  }
+
+
+  #check {
+    display: none ;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    cursor: pointer;
+    @include m.tablet { 
+      display: none;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: v.$cardBg;
+    max-width: 140rem;
+    width: 95%;
+    margin-inline: auto;
+    border-radius: 1rem;
+    padding: 4rem;
+    transform: scale(0);
+    transition: all 250ms ease;
+    @include m.tablet { 
+      position: relative;
+      top: 0;
+      padding: 0;
+      transform: scale(1);
+      width: 100%;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  #check:checked ~ &__menu{
+    transform: scale(1);
+  }
+
+  &__bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    @include m.tablet { 
+      flex-direction: row;
+      gap: 2rem;
+    }
+  }
+
+  &__links {
+    color: v.$secondaryColor;
+  }
+
+  &__btn {
+    color: v.$mainBg;
+    background-color: v.$btnBg;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+  }
+
+
+}
